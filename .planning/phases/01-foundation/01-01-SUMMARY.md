@@ -49,13 +49,26 @@ metrics:
   completed_date: "2026-03-26"
   tasks_completed: 2
   tasks_total: 3
+  tasks_skipped: 1
   files_created: 10
   files_modified: 0
+requirements_completed: [FOUND-01, FOUND-02, FOUND-04, FOUND-06, NAV-01, SEO-01, SEO-02, SEO-03, SEO-05, SEO-06]
+requirements_deferred: [FOUND-03, FOUND-05]
 ---
 
 # Phase 1 Plan 01: Foundation Scaffold Summary
 
 **One-liner:** Astro 6.x static site scaffolded with Tailwind v4 @theme design tokens, Layout shell with astro-seo SEO metadata, self-hosted Geist Sans font, and sitemap/robots.txt — build passes zero TypeScript errors in strict mode.
+
+---
+
+## Performance
+
+- **Duration:** ~5 min (Tasks 1-2 only)
+- **Started:** 2026-03-26
+- **Completed:** 2026-03-26
+- **Tasks:** 2 completed, 1 skipped (Task 3 — deployment deferred by user)
+- **Files modified:** 10 created, 0 modified
 
 ---
 
@@ -66,13 +79,26 @@ metrics:
 | 1 | Scaffold Astro project, install dependencies, configure design tokens | `95af61f` | astro.config.mts, tsconfig.json, package.json, src/styles/global.css, src/lib/metadata.ts, public/robots.txt |
 | 2 | Build Layout shell, SiteHeader, SiteFooter, and wire SEO metadata | `5ede0d2` | src/layouts/Layout.astro, src/components/layout/SiteHeader.astro, src/components/layout/SiteFooter.astro, src/pages/index.astro |
 
+## Task Skipped
+
+| Task | Name | Reason |
+|------|------|--------|
+| 3 | Deploy to Vercel and verify live site | Deferred — user will set up GitHub repository and connect Vercel manually |
+
+**Plan metadata:** `a25abce` (docs: complete foundation scaffold plan execution)
+
 ---
 
-## Checkpoint Pending
+## Deployment Deferred
 
-**Task 3 (checkpoint:human-verify):** Deploy to Vercel and verify live site.
+**Task 3 (checkpoint:human-verify) was skipped by user decision.** The project code is complete and committed. The user will handle the following steps manually:
 
-The project is committed and ready to push to GitHub. Once pushed and connected to Vercel, the human verifies the deployed site meets all visual and SEO criteria.
+1. Create a GitHub repository and push the project (`git remote add origin <url>` then `git push -u origin main`)
+2. Connect the GitHub repository to Vercel at vercel.com/new (import the repo — Vercel auto-detects Astro static builds, no adapter needed)
+3. Note the assigned `.vercel.app` URL. If it differs from `apexcode.vercel.app`, update `SITE_URL` in `src/lib/metadata.ts` and the `Sitemap:` line in `public/robots.txt`, then push to trigger a rebuild.
+4. Verify the live site against the checklist in Task 3 of the plan.
+
+**Requirements deferred until live deploy:** FOUND-03 (Vercel Git integration), FOUND-05 (loads under 3s on mobile).
 
 ---
 
