@@ -31,7 +31,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 1 plan
 
 Plans:
-- [ ] 01-01-PLAN.md — Scaffold project, design tokens, layout shell, SEO metadata, and Vercel deploy
+- [x] 01-01-PLAN.md — Scaffold project, design tokens, layout shell, SEO metadata, and Vercel deploy
 
 **UI hint**: yes
 

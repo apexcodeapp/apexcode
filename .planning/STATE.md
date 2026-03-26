@@ -3,14 +3,14 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: planning
-stopped_at: Phase 1 UI-SPEC approved
-last_updated: "2026-03-26T12:31:58.120Z"
+stopped_at: "Checkpoint: Task 3 - Deploy to Vercel (awaiting human)"
+last_updated: "2026-03-26T13:13:25.981Z"
 last_activity: 2026-03-26 — Roadmap created, ready to begin Phase 1 planning
 progress:
   total_phases: 3
-  completed_phases: 0
-  total_plans: 0
-  completed_plans: 0
+  completed_phases: 1
+  total_plans: 1
+  completed_plans: 1
   percent: 0
 ---
 
@@ -63,6 +63,8 @@ Recent decisions affecting current work:
 - Stack resolved: Astro 5.x + Tailwind CSS v4 (not Next.js) — zero-JS default, built-in TypeScript strict, zero-config Vercel deploy
 - No contact form in v1: Email `mailto:` CTA only — higher conversion at this stage
 - No illustrations or stock photos: Pure typography + layout, Vercel-like aesthetic
+- [Phase 01-foundation]: Astro 6.x accepted over 5.x — scaffold installs latest stable; API surface identical for this project's usage
+- [Phase 01-foundation]: astro.config.mts used instead of scaffold .mjs — TypeScript-only project rule enforced
 
 ### Pending Todos
 
@@ -75,6 +77,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-26T12:31:58.118Z
-Stopped at: Phase 1 UI-SPEC approved
-Resume file: .planning/phases/01-foundation/01-UI-SPEC.md
+Last session: 2026-03-26T13:13:21.268Z
+Stopped at: Checkpoint: Task 3 - Deploy to Vercel (awaiting human)
+Resume file: None

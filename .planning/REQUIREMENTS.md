@@ -7,16 +7,16 @@
 
 ### Foundation
 
-- [ ] **FOUND-01**: Site is built with Astro 5.x and TypeScript (strict mode)
-- [ ] **FOUND-02**: Tailwind CSS v4 is configured via `@theme {}` blocks (no tailwind.config.js)
-- [ ] **FOUND-03**: Project deploys to Vercel with zero-config static output
-- [ ] **FOUND-04**: All layout is mobile-first (designed for mobile, scaled up to desktop)
-- [ ] **FOUND-05**: Page loads in under 3 seconds on mobile (lean bundle, no unnecessary JS)
-- [ ] **FOUND-06**: Near-black background color (`#0a0a0a` or equivalent, not pure `#000000`)
+- [x] **FOUND-01**: Site is built with Astro 5.x and TypeScript (strict mode)
+- [x] **FOUND-02**: Tailwind CSS v4 is configured via `@theme {}` blocks (no tailwind.config.js)
+- [x] **FOUND-03**: Project deploys to Vercel with zero-config static output
+- [x] **FOUND-04**: All layout is mobile-first (designed for mobile, scaled up to desktop)
+- [x] **FOUND-05**: Page loads in under 3 seconds on mobile (lean bundle, no unnecessary JS)
+- [x] **FOUND-06**: Near-black background color (`#0a0a0a` or equivalent, not pure `#000000`)
 
 ### Navigation
 
-- [ ] **NAV-01**: Sticky header with anchor links to each on-page section (max 4 items)
+- [x] **NAV-01**: Sticky header with anchor links to each on-page section (max 4 items)
 - [ ] **NAV-02**: All sections have stable `id` attributes (`#services`, `#why-us`, `#process`, `#contact`)
 
 ### Hero
@@ -47,12 +47,12 @@
 
 ### SEO & Meta
 
-- [ ] **SEO-01**: Page has `<title>` tag (50–60 characters)
-- [ ] **SEO-02**: Page has `<meta name="description">` (150–160 characters)
-- [ ] **SEO-03**: Page has Open Graph tags: `og:title`, `og:description`, `og:image`, `og:url`
+- [x] **SEO-01**: Page has `<title>` tag (50–60 characters)
+- [x] **SEO-02**: Page has `<meta name="description">` (150–160 characters)
+- [x] **SEO-03**: Page has Open Graph tags: `og:title`, `og:description`, `og:image`, `og:url`
 - [ ] **SEO-04**: All sections use semantic HTML (`<header>`, `<section>`, `<footer>`, `<h1>`/`<h2>`)
-- [ ] **SEO-05**: `sitemap.xml` is generated and accessible
-- [ ] **SEO-06**: `robots.txt` is generated and accessible
+- [x] **SEO-05**: `sitemap.xml` is generated and accessible
+- [x] **SEO-06**: `robots.txt` is generated and accessible
 
 ## v2 Requirements
 
@@ -88,13 +88,13 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| FOUND-01 | Phase 1 | Pending |
-| FOUND-02 | Phase 1 | Pending |
-| FOUND-03 | Phase 1 | Pending |
-| FOUND-04 | Phase 1 | Pending |
-| FOUND-05 | Phase 1 | Pending |
-| FOUND-06 | Phase 1 | Pending |
-| NAV-01 | Phase 1 | Pending |
+| FOUND-01 | Phase 1 | Complete |
+| FOUND-02 | Phase 1 | Complete |
+| FOUND-03 | Phase 1 | Complete |
+| FOUND-04 | Phase 1 | Complete |
+| FOUND-05 | Phase 1 | Complete |
+| FOUND-06 | Phase 1 | Complete |
+| NAV-01 | Phase 1 | Complete |
 | NAV-02 | Phase 2 | Pending |
 | HERO-01 | Phase 2 | Pending |
 | HERO-02 | Phase 2 | Pending |
@@ -107,12 +107,12 @@
 | PROC-02 | Phase 2 | Pending |
 | CONT-01 | Phase 2 | Pending |
 | CONT-02 | Phase 2 | Pending |
-| SEO-01 | Phase 1 | Pending |
-| SEO-02 | Phase 1 | Pending |
-| SEO-03 | Phase 1 | Pending |
+| SEO-01 | Phase 1 | Complete |
+| SEO-02 | Phase 1 | Complete |
+| SEO-03 | Phase 1 | Complete |
 | SEO-04 | Phase 2 | Pending |
-| SEO-05 | Phase 1 | Pending |
-| SEO-06 | Phase 1 | Pending |
+| SEO-05 | Phase 1 | Complete |
+| SEO-06 | Phase 1 | Complete |
 
 **Coverage:**
 - v1 requirements: 24 total
