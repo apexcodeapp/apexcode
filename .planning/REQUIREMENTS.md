@@ -116,9 +116,10 @@
 
 **Coverage:**
 - v1 requirements: 24 total
-- Mapped to phases: 24
+- Mapped to phases: 24 (Phase 1: 12, Phase 2: 12)
 - Unmapped: 0 ✓
+- Note: Phase 3 (Launch) is a verification gate — no new requirements; it confirms Phases 1 and 2 work end-to-end in production
 
 ---
 *Requirements defined: 2026-03-26*
-*Last updated: 2026-03-26 after initial definition*
+*Last updated: 2026-03-26 after roadmap creation*
