@@ -48,7 +48,7 @@ Plans:
 **Plans**: 1 plan
 
 Plans:
-- [ ] 02-01-PLAN.md — Build all five content sections and assemble into index.astro
+- [x] 02-01-PLAN.md — Build all five content sections and assemble into index.astro
 
 **UI hint**: yes
 
@@ -70,7 +70,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/1 | Planning complete | - |
-| 2. Content | 0/1 | Planning complete | - |
-| 2. Content | 0/? | Not started | - |
+| 1. Foundation | 1/1 | Complete | 2026-03-26 |
+| 2. Content | 1/1 | Complete | 2026-03-26 |
 | 3. Launch | 0/? | Not started | - |

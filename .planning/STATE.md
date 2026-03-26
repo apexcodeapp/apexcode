@@ -73,7 +73,6 @@ None yet.
 
 ### Blockers/Concerns
 
-- Phase 2 (copy): Specific headline, service descriptions, and "Why Us" copy requires real input from both founders — treat as a blocking dependency before Phase 2 can be marked complete
 - Vercel plan: Hobby plan prohibits commercial use — must upgrade to Pro ($20/month) or use Cloudflare Pages before going live
 
 ## Session Continuity
