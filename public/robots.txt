@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://apexcode.vercel.app/sitemap-index.xml
