@@ -1,17 +1,17 @@
 ---
 gsd_state_version: 1.0
-milestone: v1.0
-milestone_name: milestone
+milestone: v1.1
+milestone_name: Launch
 status: planning
-stopped_at: "Phase 02 Plan 01 complete — all five content sections built and wired into index.astro"
+stopped_at: "v1.0 archived — ready to plan Phase 3 (Launch)"
 last_updated: "2026-03-26"
-last_activity: 2026-03-26 — Phase 02 Plan 01 (Content Sections) complete; build passes, all five sections live
+last_activity: 2026-03-26 — v1.0 milestone archived; Phase 3 (Launch) is next
 progress:
-  total_phases: 3
-  completed_phases: 1
-  total_plans: 2
-  completed_plans: 2
-  percent: 67
+  total_phases: 1
+  completed_phases: 0
+  total_plans: 0
+  completed_plans: 0
+  percent: 0
 ---
 
 # Project State
@@ -21,62 +21,42 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-26)
 
 **Core value:** First impression that converts — visitor lands, understands what Apex Code does, trusts the founders, and knows how to reach out.
-**Current focus:** Phase 2 — Content (complete)
+**Current focus:** v1.1 — Phase 3 (Launch)
 
 ## Current Position
 
-Phase: 2 of 3 (Content)
-Plan: 1 of 1 in current phase (complete)
-Status: Phase 2 done — ready for Phase 3 (Polish & Launch)
-Last activity: 2026-03-26 — Phase 02 Plan 01 complete; all five sections built, build passing
+Milestone: v1.1
+Phase: 3 (Launch) — not yet planned
+Status: Ready to plan Phase 3 (`/gsd:plan-phase 3`)
+Last activity: 2026-03-26 — v1.0 archived; five content sections complete, build passing, color scheme white/dark
 
-Progress: [######░░░░] 67%
-
-## Performance Metrics
-
-**Velocity:**
-
-- Total plans completed: 0
-- Average duration: -
-- Total execution time: -
-
-**By Phase:**
-
-| Phase | Plans | Total | Avg/Plan |
-|-------|-------|-------|----------|
-| 01-foundation | 1 | ~30min | ~30min |
-| 02-content | 1 | ~5min | ~5min |
-
-**Recent Trend:**
-
-- Last 5 plans: -
-- Trend: -
-
-*Updated after each plan completion*
+Progress: [░░░░░░░░░░] 0% (v1.1 not started)
 
 ## Accumulated Context
 
 ### Decisions
 
-Decisions are logged in PROJECT.md Key Decisions table.
-Recent decisions affecting current work:
-
-- Stack resolved: Astro 5.x + Tailwind CSS v4 (not Next.js) — zero-JS default, built-in TypeScript strict, zero-config Vercel deploy
-- No contact form in v1: Email `mailto:` CTA only — higher conversion at this stage
-- No illustrations or stock photos: Pure typography + layout, Vercel-like aesthetic
-- [Phase 01-foundation]: Astro 6.x accepted over 5.x — scaffold installs latest stable; API surface identical for this project's usage
-- [Phase 01-foundation]: astro.config.mts used instead of scaffold .mjs — TypeScript-only project rule enforced
+- Stack: Astro 6.x + Tailwind CSS v4 — zero-JS default, static output, zero-config Vercel deploy
+- No contact form: Email `mailto:` CTA only
+- No illustrations or stock photos: Pure typography + layout
+- Color scheme: White background (#ffffff), dark text (#0a0a0a) — inverted from original dark design
+- Hero background: Light abstract studio photo, constrained to text content block (not full-width)
+- Founders: Vlad Vulcu and Mihnea Mihai
 
 ### Pending Todos
 
-None yet.
+- Create OG image asset (`public/og-image.png`) — declared in SEO meta, asset absent
+- Replace founder bio draft text with real bios
+- Verify `hello@apexcode.dev` is correct contact address
+- Deploy to Vercel (GitHub repo + Vercel connect)
 
 ### Blockers/Concerns
 
 - Vercel plan: Hobby plan prohibits commercial use — must upgrade to Pro ($20/month) or use Cloudflare Pages before going live
+- GitHub repo not yet created (apexcodeapp org auth issue deferred in Phase 1)
 
 ## Session Continuity
 
 Last session: 2026-03-26
-Stopped at: Phase 02 Plan 01 complete — five content sections built, build passing, ready for Phase 3
+Stopped at: v1.0 milestone archived — next step is `/gsd:plan-phase 3`
 Resume file: None

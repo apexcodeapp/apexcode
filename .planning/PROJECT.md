@@ -8,38 +8,36 @@ A marketing landing page for Apex Code, a two-person development studio building
 
 First impression that converts: a visitor lands, immediately understands what Apex Code does and why they should trust it, and knows exactly how to reach out.
 
-## Requirements
+## Current State (v1.0 — 2026-03-26)
 
-### Validated
+The site is fully built and passing a clean build. Five sections, correct typography, white/dark color scheme, hero background image. Not yet deployed to Vercel.
 
-(None yet — ship to validate)
+**Outstanding before go-live:**
+- Vercel deployment (GitHub repo creation + Vercel connect)
+- OG image asset (`public/og-image.png` declared but not created)
+- Lighthouse score verification (Phase 3)
+- Real founder bios (current bios in WhyUsSection.astro are draft placeholders)
+- Verify `hello@apexcode.dev` is the correct contact address
 
-### Active
+## Next Milestone Goals (v1.1)
 
-- [ ] Hero section — bold headline, single sentence, single CTA ("Get in Touch" or "Work With Us")
-- [ ] Services section — 3 cards: AI Automation, Custom Development, Smart Integrations
-- [ ] Why Us section — 2 founders, human touch, fast delivery, modern stack
-- [ ] How We Work section — 3-step process (Discover → Build → Ship)
-- [ ] Contact section — email CTA, no form
-- [ ] Mobile-first responsive layout
-- [ ] Deploys to Vercel
-- [ ] SEO foundations (meta tags, OG, semantic HTML)
-- [ ] Lean performance — minimal JS, fast load
+1. Deploy to Vercel — push to GitHub, connect repo, confirm live URL
+2. Create OG image — 1200×630 typography card matching brand
+3. Run Lighthouse — hit 95+ Performance, 100 Accessibility/Best Practices/SEO
+4. Submit sitemap to Google Search Console
+5. Verify JS bundle < 50 KB
 
-### Out of Scope
+## Key Decisions
 
-- Authentication / user accounts — no product yet, no need
-- Database or backend — pure static site
-- Contact form — email CTA only for v1
-- Stock photos or illustrations — design direction is pure typography + layout
-- Blog or CMS — future milestone
-
-## Context
-
-- Design reference: vercel.com — dark background, minimal, high contrast, clean typography, developer-confident tone
-- Two founders, no team page needed beyond the "Why Us" section
-- Tone: bold, modern, confident — not corporate, not startup-cringe
-- Stack: GSD to recommend best fit for fast, SEO-friendly, Vercel-deployable site with TypeScript
+| Decision | Rationale | Outcome |
+|----------|-----------|---------|
+| No contact form in v1 | Reduce scope; email CTA is sufficient to capture interest at launch | Validated |
+| No illustrations or stock photos | Stays true to Vercel-like aesthetic; avoids generic startup look | Validated |
+| Astro 6.x (over 5.x) | Scaffold installs latest stable; API surface identical | Accepted |
+| `astro.config.mts` extension | TypeScript-only project rule (scaffold generated .mjs) | Enforced |
+| White background (inverted from dark) | User preference — pivoted post-Phase 2 execution | Applied |
+| Hero background image scoped to content block | Full-width felt wrong; constrained to text div with rounded corners | Applied |
+| No icons in service cards | Pure typography approach; consistent with overall aesthetic | Applied |
 
 ## Constraints
 
@@ -49,30 +47,16 @@ First impression that converts: a visitor lands, immediately understands what Ap
 - **Mobile-first**: All layouts designed for mobile, scaled up to desktop
 - **No backend**: Static site only — no server, no database, no auth
 
-## Key Decisions
+## Out of Scope
 
-| Decision | Rationale | Outcome |
-|----------|-----------|---------|
-| No contact form in v1 | Reduce scope; email CTA is sufficient to capture interest at launch | — Pending |
-| No illustrations or stock photos | Stays true to Vercel-like aesthetic; avoids generic startup look | — Pending |
-| Stack TBD by GSD | User delegated stack decision to GSD based on performance/SEO/Vercel fit | — Pending |
-
-## Evolution
-
-This document evolves at phase transitions and milestone boundaries.
-
-**After each phase transition** (via `/gsd:transition`):
-1. Requirements invalidated? → Move to Out of Scope with reason
-2. Requirements validated? → Move to Validated with phase reference
-3. New requirements emerged? → Add to Active
-4. Decisions to log? → Add to Key Decisions
-5. "What This Is" still accurate? → Update if drifted
-
-**After each milestone** (via `/gsd:complete-milestone`):
-1. Full review of all sections
-2. Core Value check — still the right priority?
-3. Audit Out of Scope — reasons still valid?
-4. Update Context with current state
+| Feature | Reason |
+|---------|--------|
+| Contact form | 81% form abandonment rate; static constraint; email CTA is higher-converting at this stage |
+| Authentication / backend / database | No product to sell; pure static site |
+| Blog / CMS | Requires content pipeline; empty blog signals neglect |
+| Case studies / portfolio | Requires client consent and copy; ship when 2+ projects complete |
+| Chat widget | Third-party JS weight; conflicts with lean performance goal |
+| Cookie banner | No tracking scripts or analytics in v1; banner is pure noise |
 
 ---
-*Last updated: 2026-03-26 after initialization*
+*Last updated: 2026-03-26 after v1.0 milestone archive*
