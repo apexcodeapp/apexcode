@@ -12,7 +12,7 @@ Close the launch gate: deploy to Vercel, verify Lighthouse scores, create the OG
 
 ### Phases
 
-- [ ] **Phase 3: Launch** — Lighthouse 95+ Performance, OG image asset (1200×630), sitemap submission to Google Search Console, JS bundle < 50 KB, Vercel deployment verified
+- [ ] **Phase 3: Launch** — Lighthouse 95+ Performance, OG image asset (1200x630), sitemap submission to Google Search Console, JS bundle < 50 KB, Vercel deployment verified
 
 ### Phase Details
 
@@ -24,7 +24,13 @@ Close the launch gate: deploy to Vercel, verify Lighthouse scores, create the OG
   2. Pasting the production URL into opengraph.xyz shows the correct title, description, and OG image preview
   3. Google Search Console confirms the sitemap is submitted and the index coverage report shows no errors
   4. The JS bundle shipped to the browser is under 50 KB (verified via Vercel build output or Chrome DevTools Network tab)
-**Plans:** TBD
+**Plans:** 4 plans
+
+Plans:
+- [ ] 03-01-PLAN.md — Pre-deploy code fixes: hero LCP optimization, site URL config, preload hints
+- [ ] 03-02-PLAN.md — Create OG image asset (1200x630 PNG)
+- [ ] 03-03-PLAN.md — Deploy to production and verify Lighthouse, OG preview, bundle size
+- [ ] 03-04-PLAN.md — Submit sitemap to Google Search Console
 
 ## Progress
 
@@ -32,4 +38,4 @@ Close the launch gate: deploy to Vercel, verify Lighthouse scores, create the OG
 |-------|-------|--------|-----------|
 | 1. Foundation | 1/1 | Complete | 2026-03-26 |
 | 2. Content | 1/1 | Complete | 2026-03-26 |
-| 3. Launch | 0/? | Not started | - |
+| 3. Launch | 0/4 | Planned | - |
