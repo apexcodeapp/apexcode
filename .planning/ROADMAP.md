@@ -45,7 +45,11 @@ Plans:
   3. Three service cards (AI Automation, Custom Development, Smart Integrations) each show an outcome-oriented description
   4. Both founders are named in the Why Us section alongside three stated differentiators (human touch, fast delivery, modern stack)
   5. The contact section shows a visible `mailto:` link with no form present on the page
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 02-01-PLAN.md — Build all five content sections and assemble into index.astro
+
 **UI hint**: yes
 
 ### Phase 3: Launch
@@ -67,5 +71,6 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 0/1 | Planning complete | - |
+| 2. Content | 0/1 | Planning complete | - |
 | 2. Content | 0/? | Not started | - |
 | 3. Launch | 0/? | Not started | - |
