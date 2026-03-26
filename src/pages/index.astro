@@ -2,12 +2,21 @@
 import Layout from '../layouts/Layout.astro';
 import SiteHeader from '../components/layout/SiteHeader.astro';
 import SiteFooter from '../components/layout/SiteFooter.astro';
+import HeroSection from '../components/sections/HeroSection.astro';
+import ServicesSection from '../components/sections/ServicesSection.astro';
+import WhyUsSection from '../components/sections/WhyUsSection.astro';
+import ProcessSection from '../components/sections/ProcessSection.astro';
+import ContactSection from '../components/sections/ContactSection.astro';
 ---
 
 <Layout>
   <SiteHeader />
   <main id="main-content">
-    {/* Content sections added in Phase 2 */}
+    <HeroSection />
+    <ServicesSection />
+    <WhyUsSection />
+    <ProcessSection />
+    <ContactSection />
   </main>
   <SiteFooter />
 </Layout>
