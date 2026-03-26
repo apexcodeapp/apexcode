@@ -28,7 +28,11 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. The page background is near-black (`#0a0a0a`) — not pure black — with high-contrast off-white text
   4. `sitemap.xml` and `robots.txt` are accessible at their canonical URLs on the deployed site
   5. A sticky header with anchor links is visible and the `<title>` and `<meta name="description">` tags are present in the page source
-**Plans**: TBD
+**Plans**: 1 plan
+
+Plans:
+- [ ] 01-01-PLAN.md — Scaffold project, design tokens, layout shell, SEO metadata, and Vercel deploy
+
 **UI hint**: yes
 
 ### Phase 2: Content
@@ -62,6 +66,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/? | Not started | - |
+| 1. Foundation | 0/1 | Planning complete | - |
 | 2. Content | 0/? | Not started | - |
 | 3. Launch | 0/? | Not started | - |
