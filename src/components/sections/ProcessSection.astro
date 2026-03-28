@@ -1,45 +1,16 @@
 ---
+import { ProcessCarousel } from "@/components/ui/process-carousel";
 ---
 
-<section id="process" aria-labelledby="process-heading" class="py-16 md:py-24">
+<section id="how-we-work" aria-labelledby="process-heading" class="relative py-28 bg-[#111111]">
   <div class="max-w-5xl mx-auto px-4">
     <h2
       id="process-heading"
-      class="text-[22px] md:text-[28px] font-semibold leading-tight tracking-[-0.01em] text-text-primary mb-12 text-center"
+      class="text-[28px] md:text-[40px] font-semibold leading-tight tracking-[-0.02em] text-white mb-14 text-center"
     >
       How We Work
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <div class="flex flex-col">
-        <span
-          class="text-[48px] font-semibold leading-none text-border mb-4 select-none"
-          aria-hidden="true"
-        >01</span>
-        <h3 class="text-base font-semibold text-text-primary mb-2">Discover</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          We learn your workflow, pain points, and goals in a focused session — no lengthy discovery phase.
-        </p>
-      </div>
-      <div class="flex flex-col">
-        <span
-          class="text-[48px] font-semibold leading-none text-border mb-4 select-none"
-          aria-hidden="true"
-        >02</span>
-        <h3 class="text-base font-semibold text-text-primary mb-2">Build</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          We ship working increments on a short cycle so you can see progress and give feedback before anything is locked in.
-        </p>
-      </div>
-      <div class="flex flex-col">
-        <span
-          class="text-[48px] font-semibold leading-none text-border mb-4 select-none"
-          aria-hidden="true"
-        >03</span>
-        <h3 class="text-base font-semibold text-text-primary mb-2">Ship</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          We deploy, document, and hand off — then stay available when something needs adjusting after launch.
-        </p>
-      </div>
-    </div>
   </div>
+  <ProcessCarousel client:load />
+  <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-[#0a0a0a]"></div>
 </section>

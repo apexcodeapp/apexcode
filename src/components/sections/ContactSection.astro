@@ -1,22 +1,38 @@
 ---
 ---
 
-<section id="contact" aria-labelledby="contact-heading" class="py-16 md:py-24">
+<section id="contact" aria-labelledby="contact-heading" class="py-30 bg-white">
   <div class="max-w-5xl mx-auto px-4 text-center">
     <h2
       id="contact-heading"
-      class="text-[22px] md:text-[28px] font-semibold leading-tight tracking-[-0.01em] text-text-primary mb-4"
+      class="text-[28px] md:text-[40px] font-semibold leading-tight tracking-[-0.02em] text-[#0a0a0a] mb-4"
     >
       Ready to Build?
     </h2>
-    <p class="text-base font-normal leading-relaxed text-text-muted mb-10 max-w-xl mx-auto">
+    <p class="text-base font-normal leading-relaxed text-[#555555] mb-10 max-w-xl mx-auto">
       Tell us what you're working on. We'll get back to you within one business day.
     </p>
     <a
       href="mailto:hello@apexcode.dev"
-      class="inline-block bg-accent text-surface font-semibold text-base px-8 py-3 rounded-md hover:opacity-90 transition-opacity duration-150"
+      class="contact-cta"
     >
       hello@apexcode.dev
     </a>
   </div>
 </section>
+
+<style>
+  .contact-cta {
+    display: inline-block;
+    background: #0a0a0a;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9375rem;
+    padding: 0.8125rem 2rem;
+    transition: background 150ms ease, transform 150ms ease;
+  }
+  .contact-cta:hover {
+    background: #1a1a1a;
+    transform: translateY(-1px);
+  }
+</style>

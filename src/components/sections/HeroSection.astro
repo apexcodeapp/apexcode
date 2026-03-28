@@ -1,29 +1,12 @@
 ---
+import { HeroGeometric } from "@/components/ui/shape-landing-hero";
 ---
 
-<section
-  id="hero"
-  aria-label="Hero"
-  class="min-h-[calc(100dvh-56px)] flex items-center justify-center"
->
-  <div class="max-w-5xl mx-auto px-16 py-20 text-center bg-cover bg-center rounded-xl"
-    style="background-image: url('/hero-bg.jpg')"
-  >
-    <h1
-      class="text-[32px] md:text-[48px] font-semibold leading-none tracking-[-0.02em] text-text-primary mb-6"
-    >
-      We build AI-powered software for businesses that can't afford to waste time.
-    </h1>
-    <p
-      class="text-base font-normal leading-relaxed text-[#555555] mb-10 max-w-2xl mx-auto"
-    >
-      Apex Code is a two-person studio that ships AI automation, custom tools, and smart integrations — built to fit your business, not the other way around.
-    </p>
-    <a
-      href="#contact"
-      class="inline-block bg-accent text-surface font-semibold text-base px-8 py-3 rounded-md hover:opacity-80 transition-opacity duration-150"
-    >
-      Work With Us
-    </a>
-  </div>
+<section id="hero">
+  <HeroGeometric
+    client:load
+    badge="AI-Powered Studio"
+    title1="We Build AI-Powered"
+    title2="Software That Ships"
+  />
 </section>

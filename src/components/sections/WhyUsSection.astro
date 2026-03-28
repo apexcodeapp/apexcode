@@ -1,50 +1,50 @@
 ---
 ---
 
-<section id="why-us" aria-labelledby="why-us-heading" class="py-16 md:py-24">
+<section id="why-us" aria-labelledby="why-us-heading" class="py-30 bg-white">
   <div class="max-w-5xl mx-auto px-4">
     <h2
       id="why-us-heading"
-      class="text-[22px] md:text-[28px] font-semibold leading-tight tracking-[-0.01em] text-text-primary mb-4 text-center"
+      class="text-[28px] md:text-[40px] font-semibold leading-tight tracking-[-0.02em] text-[#0a0a0a] mb-4 text-center"
     >
       Why Apex Code
     </h2>
-    <p class="text-base font-normal leading-relaxed text-text-muted text-center mb-12 max-w-2xl mx-auto">
+    <p class="text-base font-normal leading-relaxed text-[#555555] text-center mb-14 max-w-2xl mx-auto">
       Two founders. No account managers. You work directly with the people building your product.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-      <div class="text-center px-4">
-        <p class="text-base font-semibold text-text-primary mb-2">Human Touch</p>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
+      <div class="feature-card">
+        <p class="text-base font-semibold text-[#0a0a0a] mb-2">Human Touch</p>
+        <p class="text-sm font-normal leading-relaxed text-[#555555]">
           Direct access to the founders who built your solution — no tickets, no handoffs, no delays.
         </p>
       </div>
-      <div class="text-center px-4">
-        <p class="text-base font-semibold text-text-primary mb-2">Fast Delivery</p>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
+      <div class="feature-card">
+        <p class="text-base font-semibold text-[#0a0a0a] mb-2">Fast Delivery</p>
+        <p class="text-sm font-normal leading-relaxed text-[#555555]">
           We scope tightly and ship in weeks, not quarters. You see working software early and often.
         </p>
       </div>
-      <div class="text-center px-4">
-        <p class="text-base font-semibold text-text-primary mb-2">Modern Stack</p>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
+      <div class="feature-card">
+        <p class="text-base font-semibold text-[#0a0a0a] mb-2">Modern Stack</p>
+        <p class="text-sm font-normal leading-relaxed text-[#555555]">
           We use current tools — AI APIs, TypeScript, cloud-native infrastructure — so your solution doesn't age out.
         </p>
       </div>
     </div>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-surface-raised border border-border rounded-md p-6">
-        <p class="text-base font-semibold text-text-primary mb-3">Vlad Vulcu</p>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
+      <div class="founder-card">
+        <p class="text-base font-semibold text-[#0a0a0a] mb-3">Vlad Vulcu</p>
+        <p class="text-sm font-normal leading-relaxed text-[#555555]">
           Full-stack developer with deep experience in AI integration and backend systems.
           Obsessed with building things that actually work in production, not just in demos.
         </p>
       </div>
-      <div class="bg-surface-raised border border-border rounded-md p-6">
-        <p class="text-base font-semibold text-text-primary mb-2">Mihnea Mihai</p>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
+      <div class="founder-card">
+        <p class="text-base font-semibold text-[#0a0a0a] mb-2">Mihnea Mihai</p>
+        <p class="text-sm font-normal leading-relaxed text-[#555555]">
           Product-minded engineer who bridges the gap between what clients need and what
           gets built. Focused on shipping fast without cutting corners.
         </p>
@@ -52,3 +52,24 @@
     </div>
   </div>
 </section>
+
+<style>
+  .feature-card {
+    border: 1px solid #e5e5e5;
+    padding: 1.5rem;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+  .feature-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  }
+  .founder-card {
+    border: 1px solid #e5e5e5;
+    padding: 1.5rem;
+    transition: transform 150ms ease, box-shadow 150ms ease;
+  }
+  .founder-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+  }
+</style>

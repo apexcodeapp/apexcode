@@ -1,36 +1,19 @@
 ---
+import { ServicesCardStack } from "@/components/ui/services-card-stack";
 ---
 
-<section id="services" aria-labelledby="services-heading" class="py-16 md:py-24">
+<section id="what-we-do" aria-labelledby="services-heading" class="relative pt-28 pb-48 bg-[#111111]">
   <div class="max-w-5xl mx-auto px-4">
     <h2
       id="services-heading"
-      class="text-[22px] md:text-[28px] font-semibold leading-tight tracking-[-0.01em] text-text-primary mb-12 text-center"
+      class="text-[28px] md:text-[40px] font-semibold leading-tight tracking-[-0.02em] text-white mb-14 text-center"
     >
       What We Build
     </h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-surface-raised border border-border rounded-md p-6">
-        <h3 class="text-base font-semibold text-text-primary mb-3">AI Automation</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          We replace manual, repetitive workflows with AI systems that run while you sleep.
-          Less overhead, faster turnaround, fewer errors — without hiring more staff.
-        </p>
-      </div>
-      <div class="bg-surface-raised border border-border rounded-md p-6">
-        <h3 class="text-base font-semibold text-text-primary mb-3">Custom Development</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          Off-the-shelf software forces your team to adapt to it. We build tools that adapt
-          to you — scoped tightly, shipped fast, and designed to grow with your business.
-        </p>
-      </div>
-      <div class="bg-surface-raised border border-border rounded-md p-6">
-        <h3 class="text-base font-semibold text-text-primary mb-3">Smart Integrations</h3>
-        <p class="text-sm font-normal leading-relaxed text-text-muted">
-          Your tools shouldn't require a person in the middle. We connect your CRM, ERP,
-          and data sources so information flows where it needs to go — automatically.
-        </p>
-      </div>
+
+    <div class="w-full" style="overflow: visible; position: relative;">
+      <ServicesCardStack client:load />
     </div>
   </div>
+  <div class="pointer-events-none absolute bottom-0 left-0 right-0 h-24 bg-linear-to-b from-transparent to-[#0a0a0a]"></div>
 </section>

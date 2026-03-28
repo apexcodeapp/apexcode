@@ -1,22 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import SiteHeader from '../components/layout/SiteHeader.astro';
 import SiteFooter from '../components/layout/SiteFooter.astro';
 import HeroSection from '../components/sections/HeroSection.astro';
 import ServicesSection from '../components/sections/ServicesSection.astro';
-import WhyUsSection from '../components/sections/WhyUsSection.astro';
+import { Features } from '../components/blocks/features-4';
 import ProcessSection from '../components/sections/ProcessSection.astro';
-import ContactSection from '../components/sections/ContactSection.astro';
+import { ContactSection } from '../components/sections/ContactSection';
+import { Navbar } from '../components/ui/mini-navbar';
 ---
 
 <Layout>
-  <SiteHeader />
+  <Navbar client:load />
   <main id="main-content">
     <HeroSection />
     <ServicesSection />
-    <WhyUsSection />
+    <Features client:load />
     <ProcessSection />
-    <ContactSection />
+    <ContactSection client:load />
   </main>
   <SiteFooter />
 </Layout>

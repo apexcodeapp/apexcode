@@ -8,11 +8,21 @@
   --color-border: #e5e5e5;
   --color-accent: #0a0a0a;
 
+  /* Motion button tokens */
+  --color-background: #ffffff;
+  --color-primary: #0a0a0a;
+  --color-foreground: #0a0a0a;
+
   --font-family-sans: 'Geist Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.card-stack-stage * {
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 body {
@@ -25,5 +35,33 @@ body {
 }
 
 [id] {
-  scroll-margin-top: 56px;
+  scroll-margin-top: 96px;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-1146px); }
+}
+
+.carousel-track {
+  animation: scroll 12s linear infinite;
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+}
+
+@keyframes logo-glow {
+  0%, 100% { filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.15)); }
+  50%       { filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.65)); }
+}
+
+.logo-glow {
+  animation: logo-glow 3s ease-in-out infinite;
+  transition: transform 0.25s ease, filter 0.2s ease;
+}
+
+.logo-glow:hover {
+  transform: scale(1.12);
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.9));
+  animation-play-state: paused;
 }
